@@ -11,5 +11,7 @@ namespace CD_Collection.Data
         }
 
         public DbSet<Artist> Artist { get; set; }
+
+        public DbSet<Album> Album { get; set; }
     }
 }

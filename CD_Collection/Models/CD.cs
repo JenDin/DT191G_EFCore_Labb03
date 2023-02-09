@@ -8,6 +8,10 @@ namespace CD_Collection.Models
         public string? Title { get; set; }
 
         public int Tracks { get; set; }
+
+        public Artist? Artist { get; set; }
+
+        public int ArtistId { get; set; }
     }
 
     public class Artist
@@ -17,6 +21,8 @@ namespace CD_Collection.Models
         public string? Name { get; set; }
 
         public string? BirthDate { get; set; }
+
+        public List<Album>? Album { get; set; }
     }
 }
 
