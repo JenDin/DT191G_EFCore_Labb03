@@ -82,7 +82,7 @@ namespace CD_Collection.Controllers
             {
                 return NotFound();
             }
-            ViewData["ArtistId"] = new SelectList(_context.Artist, "Id", "Id", album.ArtistId);
+            ViewData["ArtistId"] = new SelectList(_context.Artist, "Id", "Name", album.ArtistId);
             return View(album);
         }
 
@@ -118,7 +118,7 @@ namespace CD_Collection.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ArtistId"] = new SelectList(_context.Artist, "Id", "Id", album.ArtistId);
+            ViewData["ArtistId"] = new SelectList(_context.Artist, "Id", "Name", album.ArtistId);
             return View(album);
         }
 
