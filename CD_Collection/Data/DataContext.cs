@@ -10,8 +10,10 @@ namespace CD_Collection.Data
         {
         }
 
+        // Artist table
         public DbSet<Artist> Artist { get; set; }
 
+        // Album table
         public DbSet<Album> Album { get; set; }
     }
 }

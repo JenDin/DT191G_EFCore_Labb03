@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CD_Collection.Models
 {
+    // Album class
 	public class Album
 	{
         public int Id { get; set; }
@@ -19,6 +20,7 @@ namespace CD_Collection.Models
         public int ArtistId { get; set; }
     }
 
+    // Artist class
     public class Artist
     {
         public int Id { get; set; }
