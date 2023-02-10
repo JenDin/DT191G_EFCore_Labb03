@@ -27,7 +27,7 @@ namespace CD_Collection.Models
         public string? Name { get; set; }
 
         [Required(ErrorMessage = "* Enter a date of birth")]
-        [Display(Name = "Date of birth YYYY-MM-DD")]
+        [Display(Name = "Date of birth")]
         public string? BirthDate { get; set; }
 
         public List<Album>? Album { get; set; }
