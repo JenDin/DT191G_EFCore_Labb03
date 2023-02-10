@@ -48,7 +48,7 @@ namespace CD_Collection.Controllers
         // GET: Album/Create
         public IActionResult Create()
         {
-            ViewData["ArtistId"] = new SelectList(_context.Artist, "Id", "Id");
+            ViewData["ArtistId"] = new SelectList(_context.Artist, "Id", "Name");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace CD_Collection.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ArtistId"] = new SelectList(_context.Artist, "Id", "Id", album.ArtistId);
+            ViewData["ArtistId"] = new SelectList(_context.Artist, "Id", "Name", album.Artist.Name);
             return View(album);
         }
 
