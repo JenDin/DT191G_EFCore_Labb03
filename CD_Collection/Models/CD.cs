@@ -16,6 +16,7 @@ namespace CD_Collection.Models
 
         public Artist? Artist { get; set; }
 
+        // FK to the artist table
         [Required(ErrorMessage = "* Enter an artist name")]
         public int ArtistId { get; set; }
     }
